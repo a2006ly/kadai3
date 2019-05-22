@@ -1,5 +1,16 @@
 #!/bin/bash
 
+
+if [ $# -ne 2 ];then
+    echo "error"
+    exit 1
+fi
+
+if [ $1 -eq 0 -o $2 -eq 0 ];then
+	echo "gcd is 0"
+	exit 
+fi
+
 a=$1
 b=$2
 
@@ -12,7 +23,7 @@ gcd(){
 		b=$(( b-a ))
 	fi
     done
-	echo "aaa---$a"
+	echo "gcd is $a"
 }
 
 gcd $1 $2
