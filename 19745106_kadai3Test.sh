@@ -23,7 +23,7 @@ echo -e "\n"
 #case 5
 case5=`./19745106_kadai3.sh 8 b`
 echo -e "case5----> \n$case5"
-eecho -e "\n"
+echo -e "\n"
 
 #case 6
 case6=`./19745106_kadai3.sh c d`
