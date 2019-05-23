@@ -3,7 +3,7 @@
 #params count
 if [ $# -ne 2 ];then
     echo "error"
-    exit 1
+    exit
 fi
 
 #parm1 number check
@@ -11,7 +11,7 @@ if echo "$1" | grep -q "^[0-9]\+$";then
 	echo "$1"
 else
 	echo "NG"
-	exit 1
+	exit
 fi
 
 #parm2 number check
@@ -19,7 +19,7 @@ if echo "$2" | grep -q "^[0-9]\+$";then
 	echo "$2"
 else
 	echo "NG"
-	exit 1
+	exit
 fi
 
 #if 0 then 0
