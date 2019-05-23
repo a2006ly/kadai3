@@ -1,37 +1,38 @@
 #!/bin/bash
 
-#params count
+#入力パラメーター数チェック
 if [ $# -ne 2 ];then
-    echo "error"
+    echo "引数を２個指定くだざい。"
     exit
 fi
 
-#parm1 number check
+#数字チエック
 if echo "$1" | grep -q "^[0-9]\+$";then
-	echo "$1"
+	echo "入力値１は:$1"
 else
-	echo "NG"
+	echo "入力値１は「0-9 」の数字を入力してくだざい。"
 	exit
 fi
 
-#parm2 number check
+#数字チェック
 if echo "$2" | grep -q "^[0-9]\+$";then
-	echo "$2"
+	echo "入力値２は:$2"
 else
-	echo "NG"
+	echo "入力値２は「0-9」の数字を入力してくだざい。"
 	exit
 fi
 
-#if 0 then 0
+#パラメーターの値が０の場合、０を返す処理終了
 if [ $1 -eq 0 -o $2 -eq 0 ];then
-	echo "gcd is 0"
+	echo "最大公約数は:0"
 	exit 
 fi
 
-
+#変数設定
 vara=$1
 varb=$2
 
+#最大公約数算出関数
 gcd(){
     while [ $vara -ne $varb  ]
     do
@@ -41,7 +42,8 @@ gcd(){
 		varb=$(( varb-vara ))
 	fi
     done
-	echo "gcd is $vara"
+	echo "最大公約数は :$vara"
 }
 
+#関数呼び出す
 gcd $1 $2
