@@ -28,6 +28,7 @@ if [ $1 -eq 0 -o $2 -eq 0 ];then
 	exit 
 fi
 
+
 vara=$1
 varb=$2
 
