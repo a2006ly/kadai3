@@ -3,83 +3,84 @@
 
 ############################################
 #
-#ƒeƒXƒgƒVƒFƒ‹
+#ãƒ†ã‚¹ãƒˆã‚·ã‚§ãƒ«
 #
 ############################################
 
-#case 1 ³íŒn ”Žš“ü—Í
-#“ü—ÍFˆø”1=8Aˆø”2=12
-#‘z’èo—Í:4
+
+#case 1 æ­£å¸¸ç³» æ•°å­—å…¥åŠ›
+#å…¥åŠ›ï¼šå¼•æ•°1=8ã€å¼•æ•°2=12
+#æƒ³å®šå‡ºåŠ›:4
 case1=`./19745106_kadai3.sh 8 12`
 if [ $? = 1 ];then
-@@echo -e "CASE1ˆ—ƒGƒ‰[A“ü—Í”Žš‚ðƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B"  
-@@echo -e "\n"
+ã€€ã€€echo -e "CASE1å‡¦ç†ã‚¨ãƒ©ãƒ¼ã€å…¥åŠ›æ•°å­—ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚"  
+ã€€ã€€echo -e "\n"
 else
-    echo -e "CALSE1³íI—¹"	
+    echo -e "CALSE1æ­£å¸¸çµ‚äº†"	
 fi
 
-#case 2 ³íŒn ”Žš“ü—Í
-#“ü—ÍFˆø”1=0Aˆø”2=22
-#‘z’èo—Í:0
+#case 2 æ­£å¸¸ç³» æ•°å­—å…¥åŠ›
+#å…¥åŠ›ï¼šå¼•æ•°1=0ã€å¼•æ•°2=22
+#æƒ³å®šå‡ºåŠ›:0
 case2=`./19745106_kadai3.sh 0 22`
 if [ $? = 1 ];then
-@@echo -e "CASE2ˆ—ƒGƒ‰[A“ü—Í”Žš‚ðƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B"  
+ã€€ã€€echo -e "CASE2å‡¦ç†ã‚¨ãƒ©ãƒ¼ã€å…¥åŠ›æ•°å­—ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚"  
 else
-    echo -e "CALSE2³íI—¹"	
+    echo -e "CALSE2æ­£å¸¸çµ‚äº†"	
 fi
-@@echo -e "\n"
+ã€€ã€€echo -e "\n"
 
-#case 3 ³íŒn ”Žš“ü—Í
-#“ü—ÍFˆø”1=8Aˆø”2=0
-#‘z’èo—Í:0
+#case 3 æ­£å¸¸ç³» æ•°å­—å…¥åŠ›
+#å…¥åŠ›ï¼šå¼•æ•°1=8ã€å¼•æ•°2=0
+#æƒ³å®šå‡ºåŠ›:0
 case3=`./19745106_kadai3.sh 8 0`
 if [ $? = 1 ];then
-@@echo -e "CASE3ˆ—ƒGƒ‰[A“ü—Í”Žš‚ðƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B"  
+ã€€ã€€echo -e "CASE3å‡¦ç†ã‚¨ãƒ©ãƒ¼ã€å…¥åŠ›æ•°å­—ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚"  
 else
-    echo -e "CALSE3³íI—¹"	
+    echo -e "CALSE3æ­£å¸¸çµ‚äº†"	
 fi
-@@echo -e "\n"
+ã€€ã€€echo -e "\n"
 
-#case 4 ˆÙíŒn ”ŽšˆÈŠO
-#“ü—ÍFˆø”1=aAˆø”2=42
-#‘z’èo—Í:Œ^ƒ`ƒFƒbƒNƒGƒ‰[
+#case 4 ç•°å¸¸ç³» æ•°å­—ä»¥å¤–
+#å…¥åŠ›ï¼šå¼•æ•°1=aã€å¼•æ•°2=42
+#æƒ³å®šå‡ºåŠ›:åž‹ãƒã‚§ãƒƒã‚¯ã‚¨ãƒ©ãƒ¼
 case4=`./19745106_kadai3.sh a 42`
 if [ $? = 1 ];then
-@@echo -e "CASE4ˆ—ƒGƒ‰[A“ü—Í”Žš‚ðƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B"  
+ã€€ã€€echo -e "CASE4å‡¦ç†ã‚¨ãƒ©ãƒ¼ã€å…¥åŠ›æ•°å­—ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚"  
 else
-    echo -e "CALSE4³íI—¹"	
+    echo -e "CALSE4æ­£å¸¸çµ‚äº†"	
 fi
-@@echo -e "\n"
+ã€€ã€€echo -e "\n"
 
-#case 5 ˆÙíŒn ”ŽšˆÈŠO“ü—Í
-#“ü—ÍFˆø”1=8Aˆø”2=b
-#‘z’èo—Í:Œ^ƒ`ƒFƒbƒNƒGƒ‰[
+#case 5 ç•°å¸¸ç³» æ•°å­—ä»¥å¤–å…¥åŠ›
+#å…¥åŠ›ï¼šå¼•æ•°1=8ã€å¼•æ•°2=b
+#æƒ³å®šå‡ºåŠ›:åž‹ãƒã‚§ãƒƒã‚¯ã‚¨ãƒ©ãƒ¼
 case5=`./19745106_kadai3.sh 8 b`
 if [ $? = 1 ];then
-@@echo -e "CASE5ˆ—ƒGƒ‰[A“ü—Í”Žš‚ðƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B"  
+ã€€ã€€echo -e "CASE5å‡¦ç†ã‚¨ãƒ©ãƒ¼ã€å…¥åŠ›æ•°å­—ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚"  
 else
-    echo -e "CALSE5³íI—¹"	
+    echo -e "CALSE5æ­£å¸¸çµ‚äº†"	
 fi
-@@echo -e "\n"
+ã€€ã€€echo -e "\n"
 
-#case 6 ˆÙíŒn ”ŽšˆÈŠO“ü—Í
-#“ü—ÍFˆø”1=cAˆø”2=d
-#‘z’èo—Í:Œ^ƒ`ƒFƒbƒNƒGƒ‰[
+#case 6 ç•°å¸¸ç³» æ•°å­—ä»¥å¤–å…¥åŠ›
+#å…¥åŠ›ï¼šå¼•æ•°1=cã€å¼•æ•°2=d
+#æƒ³å®šå‡ºåŠ›:åž‹ãƒã‚§ãƒƒã‚¯ã‚¨ãƒ©ãƒ¼
 case6=`./19745106_kadai3.sh c d`
 if [ $? = 1 ];then
-@@echo -e "CASE6ˆ—ƒGƒ‰[A“ü—Í”Žš‚ðƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B"  
+ã€€ã€€echo -e "CASE6å‡¦ç†ã‚¨ãƒ©ãƒ¼ã€å…¥åŠ›æ•°å­—ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚"  
 else
-    echo -e "CALSE6³íI—¹"	
+    echo -e "CALSE6æ­£å¸¸çµ‚äº†"	
 fi
-@@echo -e "\n"
+ã€€ã€€echo -e "\n"
 
-#case 7 ˆÙíŒn ‹ó“ü—Í
-#“ü—ÍFˆø”1=Aˆø”2=
-#‘z’èo—Í:ƒpƒ‰ƒ[ƒ^[”ƒ`ƒFƒbƒNƒGƒ‰[
+#case 7 ç•°å¸¸ç³» ç©ºå…¥åŠ›
+#å…¥åŠ›ï¼šå¼•æ•°1=ã€å¼•æ•°2=
+#æƒ³å®šå‡ºåŠ›:ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼æ•°ãƒã‚§ãƒƒã‚¯ã‚¨ãƒ©ãƒ¼
 case7=`./19745106_kadai3.sh`
 if [ $? = 1 ];then
-@@echo -e "CASE7ˆ—ƒGƒ‰[A“ü—Í”Žš‚ðƒ`ƒFƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B"  
+ã€€ã€€echo -e "CASE7å‡¦ç†ã‚¨ãƒ©ãƒ¼ã€å…¥åŠ›æ•°å­—ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚"  
 else
-    echo -e "CALSE7³íI—¹"	
+    echo -e "CALSE7æ­£å¸¸çµ‚äº†"	
 fi
-@@echo -e "\n"
+ã€€ã€€echo -e "\n"
