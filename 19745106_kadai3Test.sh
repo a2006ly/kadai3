@@ -47,6 +47,7 @@ fi
 ./19745106_kadai3.sh a 42
 if [ $? = 1 ];then
     echo -e "CASE4処理エラー、入力数字をチェックしてください。"  
+    exit 0
 else
     echo -e "CASE4正常終了"	
 fi
@@ -58,6 +59,7 @@ fi
 ./19745106_kadai3.sh 8 b
 if [ $? = 1 ];then
     echo -e "CASE5処理エラー、入力数字をチェックしてください。"  
+    exit 0
 else
     echo -e "CASE5正常終了"	
 fi
@@ -69,6 +71,7 @@ fi
 ./19745106_kadai3.sh c d
 if [ $? = 1 ];then
     echo -e "CASE6処理エラー、入力数字をチェックしてください。"  
+    exit 0
 else
     echo -e "CASE6正常終了"	
 fi
@@ -80,6 +83,7 @@ fi
 ./19745106_kadai3.sh
 if [ $? = 1 ];then
     echo -e "CASE7処理エラー、入力数字をチェックしてください。"  
+    exit 0
 else
     echo -e "CASE7正常終了"	
 fi
