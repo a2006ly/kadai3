@@ -8,24 +8,24 @@ fi
 
 #引数1の型チエック
 if echo "$1" | grep -q "^[0-9]\+$";then
-	echo "数値1は:$1"
+    echo "数値1は:$1"
 else
-	#echo "数値1は「0-9 」の数字を入力してくだざい。"
-	exit 1
+    #echo "数値1は「0-9」の数字を入力してくだざい。"
+    exit 1
 fi
 
 #引数2の型チェック
 if echo "$2" | grep -q "^[0-9]\+$";then
-	echo "数値2は:$2"
+    echo "数値2は:$2"
 else
-	#echo "数値2は「0-9」の数字を入力してくだざい。"
-	exit 1
+    #echo "数値2は「0-9」の数字を入力してくだざい。"
+    exit 1
 fi
 
 #パラメーターの値が0の場合、0を返す処理終了
 if [ $1 -eq 0 -o $2 -eq 0 ];then
-	echo "最大公約数は:0"
-	exit 
+    echo "最大公約数は:0"
+    exit 
 fi
 
 #変数設定
@@ -36,13 +36,13 @@ varb=$2
 gcd(){
     while [ $vara -ne $varb  ]
     do
-	if [ $vara -gt $varb  ];then
-		vara=$(( vara-varb ))
-	else
-		varb=$(( varb-vara ))
-	fi
+    if [ $vara -gt $varb  ];then
+        vara=$(( vara-varb ))
+    else
+        varb=$(( varb-vara ))
+    fi
     done
-	echo "最大公約数は :$vara"
+    echo "最大公約数は :$vara"
 }
 
 #関数呼び出す
